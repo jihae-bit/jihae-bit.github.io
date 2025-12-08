@@ -77,7 +77,7 @@ For Youtube Embeds:
    
 
 For link hub section :
-
+```html
  <section class="section" id="links">
         <div class="section__header">
           <p class="eyebrow">Link Hub</p>
@@ -107,13 +107,13 @@ For link hub section :
           </div>
         </div>
       </section>
-
+```
 For footer section :
-
+```html
 <footer class="site-footer">
   <p>© 2025 Jihae Kimm</p>
 </footer>
-
+```
 
 
 This gives the website its basic layout. And I added images and videos.
@@ -128,7 +128,7 @@ I used css to style and design the page.
 I used simple CSS rules to control colors, font styles, spacing, and layout. 
 
 To show social media icons, I used a custom font called Socicon:
-
+```css
 @font-face {
   font-family: "Socicon";
   src: url("./socicon.woff") format("woff");
@@ -136,7 +136,7 @@ To show social media icons, I used a custom font called Socicon:
   font-style: normal;
   font-display: swap;
 }
-
+```
 Here are some of the global CSS rules I used:
 
 ```css
@@ -151,10 +151,10 @@ body {
   background-color: #f5f0eb;
   line-height: 1.78;
 }
-  
+ ``` 
 
 Also, the hero section uses CSS Grid to create a two-column layout :
-
+```css
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -162,6 +162,7 @@ Also, the hero section uses CSS Grid to create a two-column layout :
   align-items: center;
   padding: 4rem 5vw 5rem;
 }
+```
 On wide screens: text and image sit side-by-side.
 On narrow screens: it automatically stacks into one column.
 

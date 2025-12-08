@@ -19,16 +19,18 @@ A single-page site built with HTML and CSS that displays my name, a short introd
 ### 1. HTML 
 I created an `index.html` file and added the main sections for structure:
 
+```html
 <header> ... </header>
 <section id="hero"> ... </section>
 <section id="videos"> ... </section>
 <section id="links"> ... </section>
 <footer> ... </footer>
-
+```
 And I filled in these sections. 
 
 For Hero section (about + portrait) :
 
+```html
 <section class="hero" id="hero">
   <div class="hero__content">
     <p class="eyebrow">Singer–Songwriter · Composer · Producer</p>
@@ -46,9 +48,11 @@ For Hero section (about + portrait) :
     <img src="./portrait.jpg" alt="Jihae Kimm portrait" loading="lazy" />
   </div>
 </section>
+```
 
 For Youtube Embeds: 
 
+```html
 <section class="section" id="videos">
   <div class="section__header">
     <p class="eyebrow">Featured Videos</p>
@@ -69,7 +73,7 @@ For Youtube Embeds:
         ></iframe>
       </div>
     </article>
-
+```
    
 
 For link hub section :

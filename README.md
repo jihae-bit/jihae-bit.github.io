@@ -187,4 +187,5 @@ Even though the YouTube link was corret, the embed did not work at first. I didn
 
 ##  Outcome
 
-https://jihae-bit.github.io/FinalProject/
+https://jihae-bit.github.io
+

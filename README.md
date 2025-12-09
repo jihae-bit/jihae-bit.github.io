@@ -1,5 +1,4 @@
-# jihae-bit.github.io
-# Final Project – Artist Website
+## Final Project – Artist Website
 
 This is my final project for the Intro to Programming class.  
 I made a single page website using HTML and CSS. 
@@ -127,7 +126,7 @@ I used css to style and design the page.
 
 I used simple CSS rules to control colors, font styles, spacing, and layout. 
 
-To show social media icons, I used a custom font called Socicon:
+To show social media icons, I used Socicons:
 ```css
 @font-face {
   font-family: "Socicon";

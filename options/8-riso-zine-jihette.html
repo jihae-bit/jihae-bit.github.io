@@ -96,7 +96,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
   .stage{height:clamp(520px,calc(100vh - 86px),calc(min(100vw - 48px,1440px) * .62));height:clamp(520px,calc(100svh - 86px),calc(min(100vw - 48px,1440px) * .62))}
 }
 .slip--cover{position:absolute;left:56%;top:5%;width:40%;rotate:-.8deg}
-.print--cover{width:100%;aspect-ratio:4/5;--fp:50% 30%}
+.print--cover{width:100%;aspect-ratio:4/5;--fp:50% 46%}
 
 .name{position:absolute;left:0;top:1.5%;display:flex;flex-direction:column;align-items:flex-start;pointer-events:none}
 .ln{display:flex;align-items:flex-end;white-space:nowrap}
@@ -147,7 +147,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
 /* about (pages 2 and 3) */
 .about .verso{display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end}
 .slip--room{width:min(50%,340px);margin-right:6%;rotate:.9deg}
-.print--room{width:100%;aspect-ratio:2/3}
+.print--room{width:100%;aspect-ratio:2/3;--fp:34% 50%}
 .about .recto{display:flex;flex-direction:column;justify-content:space-between;gap:56px}
 .about h2{margin:0;max-width:13ch;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(2.1rem,4.1vw,4rem);line-height:1.1;color:var(--wine);mix-blend-mode:multiply}
 .about mark{position:relative;background:none;color:inherit}
@@ -189,6 +189,9 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
 .pj-body .tracks{flex:0 1 auto}
 .poster-slip{flex:none;width:clamp(92px,9vw,132px);padding:5px;margin-top:4px}
 .print--poster{aspect-ratio:2/3}
+.poster-link{display:block;color:inherit;transition:transform .3s var(--ease)}
+.poster-link:hover,.poster-link:focus-visible{transform:translateY(-3px) rotate(-.6deg)}
+.poster-link:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
 .print--square{aspect-ratio:1/1}
 .poster-slip:has(.print--square){width:clamp(104px,10vw,148px)}
 .ps1{rotate:-2.5deg}.ps2{rotate:2deg}.ps3{rotate:-1.6deg}.ps4{rotate:1.8deg}.ps5{rotate:-1.2deg}
@@ -290,7 +293,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
     <div class="stage">
       <figure class="tp-print slip slip--cover">
         <div class="print print--cover">
-          <img src="img/painted/piano-profile-face.jpg" width="1000" height="1250" fetchpriority="high" decoding="async" alt="Jihette in profile at an upright piano, eyes closed, singing, her hands on the keys">
+          <img src="img/painted/overhead.jpg" width="1200" height="1800" fetchpriority="high" decoding="async" alt="Seen from above, Jihette sits on a wooden floor beside an upright piano in the corner of an empty room">
         </div>
         <span class="tp-tape" data-tape data-seed="724" data-shape="strip" style="left:31%;top:-3%;width:40%;height:6.2%;--r:-3deg" aria-hidden="true"></span>
       </figure>
@@ -311,7 +314,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
     <div class="page verso">
       <figure class="tp-print slip slip--room">
         <div class="print print--room">
-          <img src="img/painted/overhead.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Seen from above, Jihette sits on a wooden floor beside an upright piano in the corner of an empty room">
+          <img src="img/painted/piano-profile-face.jpg" width="1000" height="1250" loading="lazy" decoding="async" alt="Jihette in profile at an upright piano, eyes closed, singing, her hands on the keys">
         </div>
         <span class="tp-tape" data-tape data-seed="1770" data-shape="wedge" style="left:-7%;top:-2%;width:38%;height:5.6%;--r:-34deg" aria-hidden="true"></span>
       </figure>
@@ -339,7 +342,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
             <li><span class="trk"><span class="en"><span class="no">1</span>Friends</span><span class="meta" lang="ko">대도시의 사랑법 OST · 영화</span></span></li>
           </ul>
           <figure class="tp-print slip poster-slip ps1">
-            <div class="print print--poster"><img src="img/posters/love-in-the-big-city.jpg" width="463" height="663" loading="lazy" decoding="async" alt="Poster for the film Love in the Big City"></div>
+            <a class="poster-link" href="https://www.google.com/search?q=%EB%8C%80%EB%8F%84%EC%8B%9C%EC%9D%98+%EC%82%AC%EB%9E%91%EB%B2%95+%EC%98%81%ED%99%94" target="_blank" rel="noreferrer" aria-label="Love in the Big City: search on Google (opens in a new tab)"><div class="print print--poster"><img src="img/posters/love-in-the-big-city.jpg" width="463" height="663" loading="lazy" decoding="async" alt="Poster for the film Love in the Big City"></div></a>
             <span class="tp-tape" data-tape data-seed="1002" data-shape="strip" style="left:22%;top:-12px;width:56%;height:24px;--r:-4deg" aria-hidden="true"></span>
           </figure>
         </div>
@@ -353,7 +356,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
             <li><a href="https://www.youtube.com/watch?v=boLbRoX6M3A" target="_blank" rel="noreferrer"><span class="en"><span class="no">3</span>You are the one <span class="feat">(Heize)</span></span><span class="meta" lang="ko">당신의 맛 OST Part 2</span><span class="sr"> (YouTube, opens in a new tab)</span></a></li>
           </ul>
           <figure class="tp-print slip poster-slip ps2">
-            <div class="print print--poster print--square"><img src="img/posters/tastefully-yours.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Tastefully Yours OST Part 1 cover, Paints by Jihae Kimm"></div>
+            <a class="poster-link" href="https://www.google.com/search?q=%EB%8B%B9%EC%8B%A0%EC%9D%98+%EB%A7%9B+%EB%93%9C%EB%9D%BC%EB%A7%88" target="_blank" rel="noreferrer" aria-label="Tastefully Yours: search on Google (opens in a new tab)"><div class="print print--poster print--square"><img src="img/posters/tastefully-yours.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Tastefully Yours OST Part 1 cover, Paints by Jihae Kimm"></div></a>
             <span class="tp-tape" data-tape data-seed="1055" data-shape="wedge" style="right:-10%;top:-9px;width:50%;height:24px;--r:24deg" aria-hidden="true"></span>
           </figure>
         </div>
@@ -367,7 +370,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
             <li><a href="https://www.youtube.com/watch?v=hGOyjvWb4kU" target="_blank" rel="noreferrer"><span class="en"><span class="no">5</span>Count all the moons</span><span class="meta" lang="ko">이 별에 필요한 OST · 넷플릭스 영화</span><span class="sr"> (YouTube, opens in a new tab)</span></a></li>
           </ul>
           <figure class="tp-print slip poster-slip ps3">
-            <div class="print print--poster"><img src="img/posters/lost-in-starlight.jpg" width="486" height="720" loading="lazy" decoding="async" alt="Poster for the Netflix film Lost in Starlight"></div>
+            <a class="poster-link" href="https://www.google.com/search?q=%EC%9D%B4+%EB%B3%84%EC%97%90+%ED%95%84%EC%9A%94%ED%95%9C+%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4+%EC%98%81%ED%99%94" target="_blank" rel="noreferrer" aria-label="Lost in Starlight: search on Google (opens in a new tab)"><div class="print print--poster"><img src="img/posters/lost-in-starlight.jpg" width="486" height="720" loading="lazy" decoding="async" alt="Poster for the Netflix film Lost in Starlight"></div></a>
             <span class="tp-tape" data-tape data-seed="1160" data-shape="strip" style="left:20%;top:-12px;width:58%;height:24px;--r:-3deg" aria-hidden="true"></span>
           </figure>
         </div>
@@ -380,7 +383,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
             <li><span class="trk"><span class="en"><span class="no">6</span>As sadness won't linger</span><span class="meta" lang="ko">슬픔에 머무르지 않기에 OST</span></span></li>
           </ul>
           <figure class="tp-print slip poster-slip ps4">
-            <div class="print print--poster"><img src="img/posters/as-you-stood-by.jpg" width="190" height="281" loading="lazy" decoding="async" alt="Poster for the Netflix series As You Stood By"></div>
+            <a class="poster-link" href="https://www.google.com/search?q=%EC%8A%AC%ED%94%94%EC%97%90+%EB%A8%B8%EB%AC%B4%EB%A5%B4%EC%A7%80+%EC%95%8A%EA%B8%B0%EC%97%90+%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4+%EB%93%9C%EB%9D%BC%EB%A7%88" target="_blank" rel="noreferrer" aria-label="As You Stood By: search on Google (opens in a new tab)"><div class="print print--poster"><img src="img/posters/as-you-stood-by.jpg" width="190" height="281" loading="lazy" decoding="async" alt="Poster for the Netflix series As You Stood By"></div></a>
             <span class="tp-tape" data-tape data-seed="1107" data-shape="wedge" style="right:-12%;top:-8px;width:52%;height:24px;--r:28deg" aria-hidden="true"></span>
           </figure>
         </div>
@@ -393,7 +396,7 @@ a:focus-visible{outline:2px dashed var(--wine);outline-offset:4px}
             <li><span class="trk"><span class="en"><span class="no">7</span>Little Wings</span><span class="meta" lang="ko">민규동 감독 단편영화 · 음악감독</span></span></li>
           </ul>
           <figure class="tp-print slip poster-slip ps5">
-            <div class="print print--poster"><img src="img/posters/little-wings.jpg" width="330" height="501" loading="lazy" decoding="async" alt="Poster for the short film Little Wings, a Min Kyu-dong film"></div>
+            <a class="poster-link" href="https://www.google.com/search?q=%EC%9E%91%EC%9D%80+%EB%82%A0%EA%B0%9C+%EB%AF%BC%EA%B7%9C%EB%8F%99+%EB%8B%A8%ED%8E%B8%EC%98%81%ED%99%94" target="_blank" rel="noreferrer" aria-label="Little Wings: search on Google (opens in a new tab)"><div class="print print--poster"><img src="img/posters/little-wings.jpg" width="330" height="501" loading="lazy" decoding="async" alt="Poster for the short film Little Wings, a Min Kyu-dong film"></div></a>
             <span class="tp-tape" data-tape data-seed="1213" data-shape="strip" style="left:18%;top:-11px;width:60%;height:24px;--r:3deg" aria-hidden="true"></span>
           </figure>
         </div>
